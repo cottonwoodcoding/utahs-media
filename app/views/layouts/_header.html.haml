@@ -7,6 +7,10 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{href: '/'} Structured Media Systems
+      .text-center
+        = render partial: 'layouts/social_media_links', locals: {classes: 'hidden-xs hidden-s'}
+    %h3.logo-label.pull-right
+      %span.label.label-danger WE PRE-WIRE
     #nav-items.collapse.navbar-collapse.navbar-right
       %ul.nav.navbar-nav
         %li
@@ -22,3 +26,5 @@
         %li
           = link_to contact_path, class: 'nav-item' do
             = fa_icon "envelope"
+        %li
+          = render partial: 'layouts/social_media_links', locals: {classes: 'visible-xs visible-s'}

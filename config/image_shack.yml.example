@@ -1,0 +1,4 @@
+image_shack_url: 'https://api.imageshack.us/v1/user/:username/albums'
+image_shack_user: ':username'
+image_shack_pw: ':password'
+image_shack_main_album: 'id of album to use on home page'
