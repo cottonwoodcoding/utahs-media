@@ -6,23 +6,24 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{href: '/'} Structured Media Systems
+      %a.navbar-brand{href: '/'}
+        %img{src: image_path('logo.jpg')}
       .text-center
         = render partial: 'layouts/social_media_links', locals: {classes: 'hidden-xs hidden-s'}
-    %h3.logo-label.pull-right
+    %h3.logo-label
       %span.label.label-danger WE PRE-WIRE
     #nav-items.collapse.navbar-collapse.navbar-right
       %ul.nav.navbar-nav
         %li
-          = link_to("Home", '/', class: 'nav-item')
+          = link_to("Home", '/', class: "nav-item #{active_class('home')}")
         %li
-          = link_to("About Us", about_path, class: 'nav-item')
+          = link_to("About Us", about_path, class: "nav-item #{active_class('about')}")
         %li
-          = link_to("Products", product_path, class: 'nav-item')
+          = link_to("Products", product_path, class: "nav-item #{active_class('product')}")
         %li
-          = link_to("Services", service_path, class: 'nav-item')
+          = link_to("Services", service_path, class: "nav-item #{active_class('service')}")
         %li
-          = link_to("Gallery", gallery_path, class: 'nav-item')
+          = link_to("Gallery", gallery_path, class: "nav-item #{active_class('gallery')}")
         %li
           = link_to contact_path, class: 'nav-item' do
             = fa_icon "envelope"

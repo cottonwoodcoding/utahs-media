@@ -1,3 +1,43 @@
+@media (max-width: 768px) {
+  .logo-label {
+    margin-top: 36px;
+    float: none !important;
+  }
+  .brand-carousel {
+    float: none !important;
+  }
+}
+
+html{
+  font-family: 'Museo Sans 300' !important;
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+  height: 100%;
+}
+
+body{
+  overflow: auto;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.logo-label {
+  float: right;
+}
+
+.carousel {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.brand-carousel {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
 .full-col {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -7,9 +47,38 @@
   color: red !important;
 }
 
+.black {
+  color: black;
+}
+
+.white {
+  color: white !important;
+}
+
 .social-nav {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 22px !important;
+  margin-top: 40px;
+  font-size: 26px !important;
 }
 
+.brand-logo {
+  width: 200px !important;
+  height: 150px !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 150px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}

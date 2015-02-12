@@ -1,18 +1,29 @@
 .navbar {
-  margin-bottom: 0 !important;
+  height: 120px;
   padding-bottom: 0 !important;
-  background-color: darkgrey !important;
+  margin-bottom: 15px !important;
+  background-color: transparent !important;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 5px;
   border: none !important;
   .nav-item {
     color: black !important;
     letter-spacing: 4px;
   }
-
+  .nav-item:hover {
+    color: red !important;
+  }
   .navbar-nav {
     margin-top: 10px;
+  }
+  .active {
+    border-radius: 5px;
+    color: red !important;
   }
 }
 
 .label-danger {
   background-color: red !important;
 }
+
+
