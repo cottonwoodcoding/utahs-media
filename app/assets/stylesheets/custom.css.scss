@@ -44,7 +44,7 @@ body{
 }
 
 .red {
-  color: red !important;
+  color: #AC0000 !important;
 }
 
 .black {
@@ -60,6 +60,10 @@ body{
   margin-right: 5px;
   margin-top: 40px;
   font-size: 26px !important;
+}
+
+.social-nav:hover {
+  color: #AC0000;
 }
 
 .brand-logo {
