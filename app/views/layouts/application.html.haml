@@ -10,6 +10,7 @@
   %body
     .container-fluid
       = render partial: 'layouts/header'
+      = render :partial => "shared/bflash"
       = yield
       .clearfix
       %hr

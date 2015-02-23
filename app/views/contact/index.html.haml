@@ -1,2 +1,82 @@
-%h1 Contact#index
-%p Find me in app/views/contact/index.html.haml
+.container
+  .row
+    .col-sm-12.col-lg-12
+      .panel
+        .panel-heading
+          %h3
+            %i.icon-map-marker.main-color.font-n
+            .font-m Location
+        .panel-body
+          #map{:style => "width: 100%; height: 200px;"}
+  %hr
+    .row
+      .col-sm-4.col-lg-4
+        .panel
+          .panel-heading
+            %h3
+              %i.icon-pushpin.main-color
+              .font-m Our Location
+          .panel-body
+            %address
+              %strong.font-m.underline Structured Media Systems
+              %br
+                Address:
+                .font-n
+                  -# = @address
+                %br
+                  %i.icon-phone-sign
+                  Toll Free Number:
+                  .font-n
+                    -# = phone_number_formatted(Setting.setting_value('general-toll-free-number'))
+                %br
+                  %i.icon-phone-sign
+                  Local Number:
+                  .font-n
+                    -# = phone_number_formatted(Setting.setting_value('general-local-number'))
+        .panel
+          .panel-heading
+            %h3
+              %i.icon-time.main-color
+              .font-m Business Hours
+          .panel-body
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th.font-n Day
+                  %th.font-n Time
+              %tbody
+                -# - @days.each do |day|
+                -#   - start_value = Setting.setting_value("business-#{day}-start")
+                -#   - end_value = Setting.setting_value("business-#{day}-end")
+                -#   - if start_value == 'closed'
+                -#     %tr.danger
+                -#       %td.font-l
+                -#         = day.capitalize
+                -#       %td.font-l Closed
+                -#   - else
+                -#     %tr.success
+                -#       %td.font-l
+                -#         = day.capitalize
+                -#       %td.font-l
+                -#         = start_value
+                -#         to
+                -#         = end_value
+      .col-12.col-lg-8
+        .panel
+          .panel-heading
+            %h3
+              %i.icon-envelope.main-color
+              .font-m Feel free to contact us
+          .panel-body
+            %form#feedbackForm{:role => "form", method: 'post', action: '/send_feedback'}
+              = hidden_field_tag :authenticity_token, form_authenticity_token
+              .form-group
+                %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text", required: true}
+                  %span.help-block{:style => "display: none;"} Please enter your name.
+              .form-group
+                %input#email.form-control{:name => "email", :placeholder => "Email Address", :type => "email", required: true}
+                  %span.help-block{:style => "display: none;"} Please enter a valid e-mail address.
+              .form-group
+                %textarea#message.form-control{:cols => "100", :name => "message", :placeholder => "Message", :rows => "10", required: true}
+                %span.help-block{:style => "display: none;"} Please enter a message.
+              %button#feedbackSubmit.btn.red.pull-right.font-l{:style => "display: block; margin-top: 10px;", :type => "submit"} Send Feedback

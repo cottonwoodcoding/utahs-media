@@ -14,9 +14,9 @@ gem 'sendgrid'
 gem 'rack-cache'
 gem 'rails_12factor'
 gem 'therubyracer', platforms: :ruby
+gem 'underscore-rails'
 gem 'gmaps4rails'
 gem 'curb'
-
 
 group :production do
   gem 'heroku-deflater'

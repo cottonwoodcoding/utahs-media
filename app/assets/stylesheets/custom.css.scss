@@ -1,3 +1,5 @@
+@import 'vars';
+
 @media (max-width: 768px) {
   .logo-label {
     margin-top: 36px;
@@ -44,7 +46,7 @@ body{
 }
 
 .red {
-  color: #AC0000 !important;
+  color: $red;
 }
 
 .black {
@@ -63,12 +65,17 @@ body{
 }
 
 .social-nav:hover {
-  color: #AC0000;
+  color: $red;
 }
 
 .brand-logo {
   width: 200px !important;
   height: 150px !important;
+}
+
+.authorized-logo {
+  width: 400px !important;
+  height: 200px !important;
 }
 
 .underline {
