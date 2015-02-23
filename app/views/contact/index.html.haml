@@ -5,7 +5,7 @@
         .panel-heading
           %h3
             %i.icon-map-marker.main-color.font-n
-            .font-m Location
+            .font-m Showroom Location
         .panel-body
           #map{:style => "width: 100%; height: 200px;"}
   %hr
@@ -15,29 +15,32 @@
           .panel-heading
             %h3
               %i.icon-pushpin.main-color
-              .font-m Our Location
+              .font-m Our Locations
           .panel-body
             %address
               %strong.font-m.underline Structured Media Systems
               %br
-                Address:
                 .font-n
-                  -# = @address
+                  Draper, UT - Call For Appointment
                 %br
                   %i.icon-phone-sign
-                  Toll Free Number:
+                  Phone Number:
                   .font-n
-                    -# = phone_number_formatted(Setting.setting_value('general-toll-free-number'))
+            %address
+              %strong.font-m.underline Structured Media Systems Showroom
+              %br
+                St George, UT
+                .font-n
+                  1301 West Sunset Blvd St. George UT 84095
                 %br
                   %i.icon-phone-sign
-                  Local Number:
+                  Phone Number:
                   .font-n
-                    -# = phone_number_formatted(Setting.setting_value('general-local-number'))
         .panel
           .panel-heading
             %h3
               %i.icon-time.main-color
-              .font-m Business Hours
+              .font-m Showroom Hours
           .panel-body
             %table.table.table-hover
               %thead
@@ -45,22 +48,23 @@
                   %th.font-n Day
                   %th.font-n Time
               %tbody
-                -# - @days.each do |day|
-                -#   - start_value = Setting.setting_value("business-#{day}-start")
-                -#   - end_value = Setting.setting_value("business-#{day}-end")
-                -#   - if start_value == 'closed'
-                -#     %tr.danger
-                -#       %td.font-l
-                -#         = day.capitalize
-                -#       %td.font-l Closed
-                -#   - else
-                -#     %tr.success
-                -#       %td.font-l
-                -#         = day.capitalize
-                -#       %td.font-l
-                -#         = start_value
-                -#         to
-                -#         = end_value
+                - ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].each do |day|
+                  %tr.success
+                    %td.font-l
+                      = day.capitalize
+                    %td.font-l
+                      8:30 AM
+                      to
+                      6:00 PM
+                %tr.success
+                  %td.font-l Saturday
+                  %td.font-l
+                    10:00 AM
+                    to
+                    4:00 PM
+                %tr.danger
+                  %td.font-l Sunday
+                  %td.font-l Closed
       .col-12.col-lg-8
         .panel
           .panel-heading
