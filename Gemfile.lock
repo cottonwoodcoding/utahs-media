@@ -69,6 +69,9 @@ GEM
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-turbolinks (2.1.0)
+      railties (>= 3.1.0)
+      turbolinks
     json (1.8.2)
     kgio (2.9.3)
     libv8 (3.16.14.7)
@@ -79,6 +82,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    modernizr-rails (2.7.1)
     multi_json (1.10.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -195,6 +199,8 @@ DEPENDENCIES
   heroku-deflater
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-turbolinks
+  modernizr-rails
   pg
   pry
   rack-cache

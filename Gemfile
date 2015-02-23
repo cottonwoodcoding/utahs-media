@@ -16,7 +16,9 @@ gem 'rails_12factor'
 gem 'therubyracer', platforms: :ruby
 gem 'underscore-rails'
 gem 'gmaps4rails'
+gem 'modernizr-rails'
 gem 'curb'
+gem 'jquery-turbolinks'
 
 group :production do
   gem 'heroku-deflater'
