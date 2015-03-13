@@ -8,6 +8,18 @@
   .brand-carousel {
     float: none !important;
   }
+
+  .navbar-collapse {
+    background-color: black !important;
+
+    .nav-item {
+      color: white !important;
+    }
+  }
+}
+
+.navbar {
+  z-index: 5000 !important;
 }
 
 html{
