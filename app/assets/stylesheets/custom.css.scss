@@ -45,12 +45,20 @@ body{
   padding-right: 0 !important;
 }
 
+.no-decoration:visited {
+  color: black !important;
+}
+
+.no-decoration:hover {
+  color: black !important;
+}
+
 .red {
   color: $red;
 }
 
 .black {
-  color: black;
+  color: black !important;
 }
 
 .white {

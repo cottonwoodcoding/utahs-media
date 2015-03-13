@@ -1,8 +1,8 @@
 %h2.text-center Services We Offer
 %hr
-.col-xs-12
-  .col-xs-12.col-sm-6.col-md-4
-    .services-box
+.row
+  .col-xs-12.col-sm-6.col-md-5.col-md-offset-1
+    .services-box.text-center
       .front
         = image_tag('home-automation-icon.png')
         .lead
@@ -10,7 +10,7 @@
       .back
         .lead
           Home Automation
-  .col-xs-12.col-sm-6.col-md-4
+  .col-xs-12.col-sm-6
     .services-box
       .front
         = image_tag('lighting-controls-icon.png')
@@ -19,34 +19,39 @@
       .back
         .lead
           Lighting Control
-  .col-xs-12.col-sm-6.col-md-4
-    .services-box
-      .front
-        = image_tag('shades-icon.png')
-        .lead
-          Automated Shades
-      .back
-        .lead
-          Automated Shades
-  .col-xs-12.col-sm-6.col-md-4
-    .services-box
-      .front
-        = image_tag('theater-room-icon.png')
-        .lead
-          Theaters/Multi-Media Rooms
-      .back
-        .lead
-          Theaters/Multi-Media Rooms
-  .col-xs-12.col-sm-6.col-md-4
-    .services-box
-      .front
-        = image_tag('distributed-icon.png')
-        .lead
-          Distributive Audio/Video
-      .back
-        .lead
-          Distributive Audio/Video
-  .col-xs-12.col-sm-6.col-md-4
+  .col-xs-12.hidden-xs
+    %hr
+  .row
+    .col-xs-12.col-sm-6.col-md-4
+      .services-box
+        .front
+          = image_tag('shades-icon.png')
+          .lead
+            Automated Shades
+        .back
+          .lead
+            Automated Shades
+    .col-xs-12.col-sm-6.col-md-4
+      .services-box
+        .front
+          = image_tag('theater-room-icon.png')
+          .lead
+            Theaters/Multi-Media Rooms
+        .back
+          .lead
+            Theaters/Multi-Media Rooms
+    .col-xs-12.col-sm-6.col-md-4
+      .services-box
+        .front
+          = image_tag('distributed-icon.png')
+          .lead
+            Distributive Audio/Video
+        .back
+          .lead
+            Distributive Audio/Video
+  .col-xs-12.hidden-xs
+    %hr
+  .col-xs-12.col-sm-6.col-md-5.col-md-offset-1
     .services-box
       .front
         = image_tag('security-icon.png')
@@ -55,7 +60,7 @@
       .back
         .lead
           Surveillance and Security Systems
-  .col-xs-12.col-sm-6.col-md-4
+  .col-xs-12.col-sm-6
     .services-box
       .front
         = image_tag('vacuum-icon.png')

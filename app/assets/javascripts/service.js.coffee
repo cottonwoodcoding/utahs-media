@@ -1,3 +1,4 @@
 $ ->
-  $('.services-box').flip
-    trigger: 'hover'
+  $(document).ready ->
+    $('.services-box').flip
+      trigger: 'hover'

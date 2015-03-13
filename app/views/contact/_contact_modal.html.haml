@@ -1,0 +1,20 @@
+#contact_modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %h4.modal-title Contact Us
+      .modal-body
+        %form#feedbackForm{:role => "form", method: 'post', action: '/send_feedback'}
+          = hidden_field_tag :authenticity_token, form_authenticity_token
+          .form-group
+            %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text", required: true}
+              %span.help-block{:style => "display: none;"} Please enter your name.
+          .form-group
+            %input#email.form-control{:name => "email", :placeholder => "Email Address", :type => "email", required: true}
+              %span.help-block{:style => "display: none;"} Please enter a valid e-mail address.
+          .form-group
+            %textarea#message.form-control{:cols => "100", :name => "message", :placeholder => "Message", :rows => "10", required: true}
+            %span.help-block{:style => "display: none;"} Please enter a message.
+          .modal-footer
+            = link_to "Cancel", :root, class: 'btn btn-default'
+            %button#feedbackSubmit.btn.red.pull-right{:type => "submit"} Send Feedback
