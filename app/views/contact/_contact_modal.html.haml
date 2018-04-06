@@ -7,7 +7,7 @@
         %form#feedbackForm{:role => "form", method: 'post', action: '/send_feedback'}
           = hidden_field_tag :authenticity_token, form_authenticity_token
           .form-group
-            %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text", required: true}
+            %input#name.form-control{:name => "name", :placeholder => "Name", :type => "text", required: true, :autofocus => true}
               %span.help-block{:style => "display: none;"} Please enter your name.
           .form-group
             %input#email.form-control{:name => "email", :placeholder => "Email Address", :type => "email", required: true}
@@ -17,4 +17,4 @@
             %span.help-block{:style => "display: none;"} Please enter a message.
           .modal-footer
             = link_to "Cancel", :root, class: 'btn btn-default'
-            %button#feedbackSubmit.btn.red.pull-right{:type => "submit"} Send Feedback
+            %button#feedbackSubmit.btn.red.pull-right{:type => "submit", data: { "disable-with" => "Sending..."}} Send Feedback
