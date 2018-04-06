@@ -1,4 +1,4 @@
-#gallery_accordion.panel-group{role: 'tablist', 'aria-multiselectable' => false}
+#gallery_accordion.panel-group.container{role: 'tablist', 'aria-multiselectable' => false}
   - @album_hash.each_with_index do |album, i|
     .panel.panel-default.gallery-accordion.text-center.underline
       - album_id = album.first
