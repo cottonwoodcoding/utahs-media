@@ -6,8 +6,26 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    %script{:src => "//maps.google.com/maps/api/js?key=", :type => "text/javascript"}
+    %script{:src => "//maps.google.com/maps/api/js?key=AIzaSyCoFI179piQv1r0BDJhrgRcD2fGCcqrPvs", :type => "text/javascript"}
     %script{:src => "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js", :type => "text/javascript"}
+    / Facebook Pixel Code
+    :javascript
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '247785359329930');
+        fbq('track', 'PageView');
+    %noscript
+      %img{:height => "1", :style => "display:none", :width => "1"}>/
+      \&#xA0;&#xA0;src="https://www.facebook.com/tr?id=247785359329930=PageView=1"
+      \/&gt;
+    / End Facebook Pixel Code
+
   %body
     .container-fluid
       = render partial: 'layouts/header'
