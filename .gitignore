@@ -47,3 +47,4 @@ bower.json
 /log/*.log
 /tmp
 /config/email.yml
+/config/google.yml
