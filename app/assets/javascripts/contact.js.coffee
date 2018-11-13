@@ -6,8 +6,8 @@ $ ->
          id: "map"
      , ->
        marker = handler.addMarker({
-         lat: 37.122551
-         lng: -113.611950
+         lat: 37.104801
+         lng: -113.556580
        })
        handler.map.centerOn(marker)
 
