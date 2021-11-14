@@ -99,8 +99,6 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 5.1)
-    heroku-deflater (0.6.3)
-      rack (>= 1.4.5)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -118,7 +116,6 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     libv8 (3.16.14.19)
-    libv8 (3.16.14.19-x86_64-linux)
     loofah (2.12.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -131,8 +128,6 @@ GEM
     modernizr-rails (2.7.1)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
     pry (0.14.1)
@@ -223,7 +218,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   bootstrap-sass
@@ -233,7 +227,6 @@ DEPENDENCIES
   font-awesome-rails
   gmaps4rails
   haml-rails
-  heroku-deflater
   jbuilder
   jquery-rails
   jquery-turbolinks
