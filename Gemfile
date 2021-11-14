@@ -21,10 +21,6 @@ gem 'therubyracer', platforms: :ruby
 gem 'uglifier'
 gem 'underscore-rails'
 
-group :production do
-  gem 'heroku-deflater'
-end
-
 group :development, :test do
   gem 'dotenv-rails'
   gem 'pry'
