@@ -1,6 +1,5 @@
 .navbar {
-  height: 120px;
-  padding-bottom: 0 !important;
+  padding: 10px;
   margin-bottom: 15px !important;
   background-color: transparent !important;
   box-shadow: 10px 10px 5px #888888;
@@ -11,19 +10,17 @@
     letter-spacing: 4px;
   }
   .nav-item:hover {
-    color: #AC0000 !important;
+    color: #ac0000 !important;
   }
   .navbar-nav {
     margin-top: 10px;
   }
   .active {
     border-radius: 5px;
-    color: #AC0000 !important;
+    color: #ac0000 !important;
   }
 }
 
 .label-danger {
-  background-color: #AC0000 !important;
+  background-color: #ac0000 !important;
 }
-
-

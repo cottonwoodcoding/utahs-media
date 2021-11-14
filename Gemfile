@@ -1,31 +1,32 @@
 source 'https://rubygems.org'
-ruby '2.5.0'
+ruby '3.0.1'
 
-gem 'rails', '4.2.10'
-gem 'pg', '~> 0.15'
-gem 'puma'
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'haml-rails'
-gem 'font-awesome-rails'
-gem 'rack-cache'
-gem 'rails_12factor'
-gem 'therubyracer', platforms: :ruby
-gem 'underscore-rails'
-gem 'gmaps4rails'
-gem 'modernizr-rails'
+gem 'bootstrap-sass'
+gem 'coffee-rails'
 gem 'curb'
+gem 'font-awesome-rails'
+gem 'gmaps4rails'
+gem 'haml-rails'
+gem 'jbuilder'
+gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'modernizr-rails'
+gem 'pg'
+gem 'puma'
+gem 'rack-cache'
+gem 'rails'
+gem 'rails_12factor'
+gem 'sass-rails'
+gem 'therubyracer', platforms: :ruby
+gem 'uglifier'
+gem 'underscore-rails'
 
 group :production do
   gem 'heroku-deflater'
 end
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry'
 end
 

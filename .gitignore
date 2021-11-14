@@ -48,3 +48,6 @@ bower.json
 /tmp
 /config/email.yml
 /config/google.yml
+
+# Ignore .env
+.env

@@ -6,14 +6,19 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{href: '/'}
+      %a{href: '/'}
         %img{src: image_path('utah-led.jpg'), height: 75, width: 150}
-      .text-center
-        = render partial: 'layouts/social_media_links', locals: {classes: 'hidden-xs hidden-s'}
-    %h3.logo-label
+      %span{class: 'hidden-s hidden-xs', style: 'display: flex; align-items: center; justify-content: center;'}
+        = link_to "https://www.facebook.com/utahled", {target: '_blank'}, class: 'hidden-xs hidden-s' do
+          = fa_icon 'facebook-square 3x', class: 'shadow black nav-item'
+        = link_to "https://www.instagram.com/utahled", {target: '_blank'}, class: 'hidden-xs hidden-s' do
+          = fa_icon 'instagram 3x', class: 'shadow black nav-item' 
+        %a.black.no-decoration{href: '#contact_modal', 'data-toggle' => 'modal'}
+          = fa_icon "envelope 3x", class: 'pointer', id: 'contact_trigger'
+    %h3.logo-label{ class: 'hidden-xs hidden-s', style: 'margin-top: 45px;'}
       %span.label.label-danger PRE-WIRE Specialists
     #nav-items.collapse.navbar-collapse.navbar-right
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav{ class: 'hidden-xs hidden-s', style: 'height: 100px; display: flex; align-items: center; justify-content: center;'}
         %li
           = link_to("Home", '/', class: "nav-item #{active_class('home')}")
         %li
@@ -25,7 +30,17 @@
         %li
           = link_to("Gallery", gallery_path, class: "nav-item #{active_class('gallery')}")
         %li
-          %a.black.no-decoration{href: '#contact_modal', 'data-toggle' => 'modal'}
-            = fa_icon "envelope", class: 'pointer', id: 'contact_trigger'
+          = render partial: 'layouts/social_media_links', locals: {classes: 'visible-xs visible-s'}
+      %ul.nav.navbar-nav{ class: 'visible-xs visible-s' }
+        %li
+          = link_to("Home", '/', class: "nav-item #{active_class('home')}")
+        %li
+          = link_to("About Us", about_path, class: "nav-item #{active_class('about')}")
+        %li
+          = link_to("Products", product_path, class: "nav-item #{active_class('product')}")
+        %li
+          = link_to("Services", service_path, class: "nav-item #{active_class('service')}")
+        %li
+          = link_to("Gallery", gallery_path, class: "nav-item #{active_class('gallery')}")
         %li
           = render partial: 'layouts/social_media_links', locals: {classes: 'visible-xs visible-s'}
